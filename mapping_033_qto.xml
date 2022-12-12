@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://download.autodesk.com/us/navisworks/schemas/nw-exchange-12.0.xsd" units="m" filename="mapping_033_qto.nwc" filepath="C:\Users\i.yurasov\Desktop\tmp\a2r">
+  <selectionsets>
+    <viewfolder name="IFC Sample" guid="075c559c-8250-40d2-b286-d8d75347ee54">
+      <viewfolder name="LGF" guid="2ab1f790-13b0-4224-8a6d-15f469461cb6">
+        <selectionset name="LGF - All" guid="5d52b74c-c125-46b4-85fb-2fd105893d9c">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="10">
+                <property>
+                  <name internal="LcOaNodeLayer">Layer</name>
+                </property>
+                <value>
+                  <data type="wstring">LGF</data>
+                </value>
+              </condition>
+            </conditions>
+            <locator>/</locator>
+          </findspec>
+        </selectionset>
+        <selectionset name="LGF - Columns" guid="e43b7f4c-eda9-4cbe-82e8-16662a6d7061">
+          <findspec mode="all" disjoint="0">
+            <conditions>
+              <condition test="equals" flags="10">
+                <property>
+                  <name internal="LcOaNodeLayer">Layer</name>
+                </property>
+                <value>
+                  <data type="wstring">LGF</data>
+                </value>
+              </condition>
+              <condition test="equals" flags="10">
+                <property>
+                  <name internal="LcOaSceneBaseClassUserName">Type</name>
+                </property>
+                <value>
+                  <data type="wstring">IFCCOLUMN</data>
+                </value>
+              </condition>
+            </conditions>
+            <locator>/</locator>
+          </findspec>
+        </selectionset>
+      </viewfolder>
+    </viewfolder>
+  </selectionsets>
+</exchange>
